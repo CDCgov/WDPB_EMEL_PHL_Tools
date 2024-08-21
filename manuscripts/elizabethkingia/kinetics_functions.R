@@ -2,7 +2,7 @@
 ### Adapted from: Chlorine Disinfection Kinetics of *Elizabethkingia* spp. 
 ### David A Holcomb
 ### Created: 21 June 2024
-### Updated: 07 August 2024
+### Updated: 21 August 2024
 
 
 ##
@@ -108,9 +108,9 @@ law_cw_demand <- function(c0, time, kprime, lnk, lnn){
 # parameters of interest (k, n, m) are passed log-transformed for computational reasons
 law_hom_demand <- function(c0, time, kprime, lnk, lnn, lnm){
   
-  k = exp(lnk)
-  n = exp(lnn)
-  m = exp(lnm)
+  k <- exp(lnk)
+  n <- exp(lnn)
+  m <- exp(lnm)
   
   A	<- (-k * m * (c0^n)) / ((n * kprime)^m)
   B <- pgamma(n * kprime * time, m)	
