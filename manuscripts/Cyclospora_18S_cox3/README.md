@@ -64,4 +64,4 @@ python FastqList.py -d . -s _duplicated.detail.txt -p 0.25
 `18S_Dendrogram.md` rmarkdown to create dendrogram plot of most abundant taxa found in pond and sludge samples based on 18S gene sliced reads mapped to *C. cayetanensis* 18S gene region (655-807bp).
 
 ## Mansucript status
-In clearance
+Published: Hofstetter, J., Arfken, A., Kahler, A., Qvarnstrom, Y., Rodrigues, C., & Mattioli, M. (2024). Evaluation of coccidia DNA in irrigation pond water and wastewater sludge associated with Cyclospora cayetanensis 18S rRNA gene qPCR detections. Microbiology Spectrum, e00906-24.
