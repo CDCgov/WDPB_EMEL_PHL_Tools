@@ -6,6 +6,8 @@ Tutorial, code, and example data for analyzing microbial disinfection kinetics i
 
 <br />
 
+## [Manuscript repository](https://github.com/CDCgov/WDPB_EMEL/tree/main/manuscripts/elizabethkingia)
+
 [Tutorial (HTML report)](kinetics_tutorial.html)
 
 [Kinetic model functions (R script)](kinetics_functions.R)
@@ -14,4 +16,6 @@ Tutorial, code, and example data for analyzing microbial disinfection kinetics i
 
 [Chlorine dose data (CSV)](chlorine_dose.csv)
 
-[Manuscript repository](https://github.com/CDCgov/WDPB_EMEL/tree/main/manuscripts/elizabethkingia)
+<br />
+
+## [EMEL repository](https://github.com/CDCgov/WDPB_EMEL/)
