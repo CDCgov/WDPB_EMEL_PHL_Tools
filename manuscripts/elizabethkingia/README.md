@@ -1,4 +1,4 @@
-# Disinfection Kinetic Models
+# [Disinfection Kinetic Models](https://cdcgov.github.io/WDPB_EMEL/manuscripts/elizabethkingia/)
 
 Tutorial, code, and example data for analyzing microbial disinfection kinetics in **R**, as implemented in:
 
