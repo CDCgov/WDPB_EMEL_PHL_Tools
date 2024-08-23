@@ -1,5 +1,6 @@
-# [Cyclospora_18S_COX3](https://github.com/CDCgov/WDPB_EMEL_PHL_Tools/tree/main/manuscripts/Cyclospora_18S_cox3)
-
+# [Cyclospora_18S_COX3](https://github.com/CDCgov/WDPB_EMEL/tree/main/manuscripts/Cyclospora_18S_cox3)
+### Associated Publication
+#### [Hofstetter, J., Arfken, A., Kahler, A., Qvarnstrom, Y., Rodrigues, C., & Mattioli, M. (2024). Evaluation of coccidia DNA in irrigation pond water and wastewater sludge associated with Cyclospora cayetanensis 18S rRNA gene qPCR detections. Microbiology Spectrum, e00906-24.](https://journals.asm.org/doi/full/10.1128/spectrum.00906-24)
 
 ## Project Description
 Selected scripts and codes used in the dectection of *Cyclospora cayetanensis* from 18S and COX3 amplicon sequencing. Test data sets included in this repository are from a subset of samples pulled from COX3 sequencing.
@@ -63,5 +64,3 @@ python FastqList.py -d . -s _duplicated.detail.txt -p 0.25
 ## Figures
 `18S_Dendrogram.md` rmarkdown to create dendrogram plot of most abundant taxa found in pond and sludge samples based on 18S gene sliced reads mapped to *C. cayetanensis* 18S gene region (655-807bp).
 
-## Mansucript status
-Published: Hofstetter, J., Arfken, A., Kahler, A., Qvarnstrom, Y., Rodrigues, C., & Mattioli, M. (2024). Evaluation of coccidia DNA in irrigation pond water and wastewater sludge associated with Cyclospora cayetanensis 18S rRNA gene qPCR detections. Microbiology Spectrum, e00906-24.
