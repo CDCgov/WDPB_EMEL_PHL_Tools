@@ -1,4 +1,4 @@
-# Cyclospora_18S_COX3
+# [Cyclospora_18S_COX3](https://github.com/CDCgov/WDPB_EMEL_PHL_Tools/tree/main/manuscripts/Cyclospora_18S_cox3)
 
 
 ## Project Description
