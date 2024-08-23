@@ -2,7 +2,7 @@
 ### Adapted from: Chlorine Disinfection Kinetics of *Elizabethkingia* spp. 
 ### David A Holcomb
 ### Created: 21 June 2024
-### Updated: 21 August 2024
+### Updated: 23 August 2024
 
 
 ##
@@ -31,21 +31,20 @@ fit_loglin <- function(data,
     e_hat <- resid(fit)           # model residuals
     tss <- sum((y - mean(y))^2)   # total sum of squares
     rss <- sum((e_hat)^2)         # residual sum of squares
-    r2_naive <- 1 - (rss / tss)   # naive R-squared (unreliable for NLS)
+    r2 <- 1 - (rss / tss)         # R-squared (unreliable for NLS)
     rmse <- sqrt(mean(e_hat^2))
-    deviance_null <- glm(form, data = data)$null.deviance
+    dev_null <- glm(form, data = data)$null.deviance
     
     stat <- glance(fit) %>%
       mutate(tss = tss,
-             deviance_null = deviance_null,
-             r2_naive = r2_naive,
+             dev_null = dev_null,
+             r2 = r2,
              rmse = rmse) %>%
       select(sigma, rmse,
              nobs, df_resid = df.residual,
              loglik = logLik, tss,
-             deviance, deviance_null,
-             r2_naive, r2_pseudo = r.squared,
-             aic = AIC, bic = BIC)
+             deviance, dev_null, dev_explain = r.squared,
+             r2, aic = AIC, bic = BIC)
     
     est <- tidy(fit, conf.int = TRUE) %>%
       select(term,
@@ -137,7 +136,7 @@ extract_kinetic <- function(fit,
   e_hat <- resid(fit)           # model residuals
   tss <- sum((y - mean(y))^2)   # total sum of squares
   rss <- sum((e_hat)^2)         # residual sum of squares
-  r2_naive <- 1 - (rss / tss)   # naive R-squared (unreliable for NLS)
+  r2 <- 1 - (rss / tss)         # R-squared (unreliable for NLS)
   
   ## root mean squared error
   rmse <- sqrt(mean(e_hat^2))
@@ -157,22 +156,21 @@ extract_kinetic <- function(fit,
   
   d_null <- deviance(fit_null)        # null deviance (residual deviance of null model)
   d_resid <- deviance(fit)            # residual deviance of proposed model
-  r2_pseudo <- 1 - (d_resid / d_null) # deviance explained (pseudo R-squared)
+  d_explain <- 1 - (d_resid / d_null) # deviance explained
   
   
   ## standard model stats
   stat <- glance(fit) %>%
     mutate(rmse = rmse,
            tss = tss,
-           r2_naive = r2_naive,
-           r2_pseudo = r2_pseudo,
-           deviance_null = d_null) %>%
+           r2 = r2,
+           dev_explain = d_explain,
+           dev_null = d_null) %>%
     select(sigma, rmse,
            nobs, df_resid = df.residual,
            loglik = logLik, tss,
-           deviance, deviance_null,
-           r2_naive, r2_pseudo,
-           aic = AIC, bic = BIC,
+           deviance, dev_null, dev_explain,
+           r2, aic = AIC, bic = BIC,
            converge = isConv)
   
   est_ci <- confint(fit)
@@ -198,6 +196,7 @@ extract_kinetic <- function(fit,
   return(est)
   
 }
+
 
 
 ### revised function to fit nonlinear kinetic models with nonlinear least squares
@@ -291,7 +290,7 @@ tab_ct <- function(est, .dose = 0.2){
   
   est %>%
     select(model, nobs,
-           aic, r2_pseudo, rmse,
+           aic, rmse, dev_explain,
            term, est) %>%
     pivot_wider(names_from = term,
                 values_from = est) %>%
@@ -302,9 +301,8 @@ tab_ct <- function(est, .dose = 0.2){
            ct_log3 = .dose * calc_time(lnS = log(0.001), c0 = .dose, k = k, n = n, m = m),
            ct_log4 = .dose * calc_time(lnS = log(0.0001), c0 = .dose, k = k, n = n, m = m),
            m = ifelse(model == "Chick-Watson", NA, m))
-
+  
 }
-
 
 
 #
