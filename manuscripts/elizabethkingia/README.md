@@ -14,4 +14,4 @@ Tutorial, code, and example data for analyzing microbial disinfection kinetics i
 
 [Chlorine dose data (CSV)](chlorine_dose.csv)
 
-[Manuscript repository](https://github.com/CDCgov/WDPB_EMEL/edit/main/manuscripts/elizabethkingia/)
+[Manuscript repository](https://github.com/CDCgov/WDPB_EMEL/tree/main/manuscripts/elizabethkingia)
