@@ -14,7 +14,6 @@
 
 # CDCgov GitHub Open Source Related documents
 
-* [Open Practices](open_practices.md)
 * [Rules of Behavior](rules_of_behavior.md)
 * [Disclaimer](DISCLAIMER.md)
 * [Contribution Notice](CONTRIBUTING.md)
