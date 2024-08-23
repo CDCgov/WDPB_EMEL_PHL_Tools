@@ -10,9 +10,8 @@
 2. [Holcomb DA, Riner D, Cowan B, Salah Z, Jennings WC, Mattioli MC, Murphy JL.(2024). Chlorine inactivation of waterborne opportunistic pathogen Elizabethkingia spp. in water. Emerginging Infectious Disease. In press](manuscripts/elizabethkingia)
 
 
-
-# CDCgov GitHub Organization Open Source 
-## Related documents
+<br />
+# CDCgov GitHub Open Source Related documents
 
 * [Open Practices](open_practices.md)
 * [Rules of Behavior](rules_of_behavior.md)
