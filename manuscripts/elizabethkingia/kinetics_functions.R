@@ -1,8 +1,8 @@
 ### Functions: Modeling Microbial Inactivation Kinetics with Disinfectant Demand
-### Adapted from: Chlorine Disinfection Kinetics of *Elizabethkingia* spp. 
+### Adapted from: Chlorine inactivation of *Elizabethkingia* species in water 
 ### David A Holcomb
 ### Created: 21 June 2024
-### Updated: 23 August 2024
+### Updated: 03 September 2024
 
 
 ##
@@ -131,7 +131,7 @@ extract_kinetic <- function(fit,
                             form_null = NULL,
                             time_var = "time"){
   
-  ## Naive R-Squared
+  ## R-Squared
   y <- fit$m$lhs()              # original outcome data
   e_hat <- resid(fit)           # model residuals
   tss <- sum((y - mean(y))^2)   # total sum of squares
