@@ -10,7 +10,7 @@
 
 [Analysis code (HTML report)](predict_irrigation_hf183.html)
 
-[Training and test data (CSV)](irrigation_microbes.csv)
+[Training and test data (CSV)](pond_data.csv)
 
 <br />
 
