@@ -8,7 +8,7 @@
 
 1. [Hofstetter, J., Arfken, A., Kahler, A., Qvarnstrom, Y., Rodrigues, C., & Mattioli, M. (2024). Evaluation of coccidia DNA in irrigation pond water and wastewater sludge associated with *Cyclospora cayetanensis* 18S rRNA gene qPCR detections. *Microbiology Spectrum*, e00906-24.](manuscripts/Cyclospora_18S_cox3)
 
-2. [Holcomb DA, Riner D, Cowan B, Salah Z, Jennings WC, Mattioli MC, Murphy JL. (2024). Chlorine inactivation of *Elizabethkingia* species in water. *Emerging Infectious Diseases*, *30* (10). https://doi.org/10.3201/eid3010.240917](manuscripts/elizabethkingia)
+2. [Holcomb DA, Riner D, Cowan B, Salah Z, Jennings WC, Mattioli MC, Murphy JL. (2024). Chlorine inactivation of *Elizabethkingia* spp. in water. *Emerging Infectious Diseases*, *30* (10). https://doi.org/10.3201/eid3010.240917](manuscripts/elizabethkingia)
 
 
 <br />
