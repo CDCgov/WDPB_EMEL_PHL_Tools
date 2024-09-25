@@ -2,7 +2,7 @@
 
 Tutorial, code, and example data for analyzing microbial disinfection kinetics in **R**, as implemented in:
 
-> Holcomb DA, Riner D, Cowan B, Salah Z, Jennings WC, Mattioli MC, Murphy JL. (2024). Chlorine inactivation of *Elizabethkingia* species in water. *Emerging Infectious Diseases*, *30* (10). [https://doi.org/10.3201/eid3010.240917](https://doi.org/10.3201/eid3010.240917)
+> Holcomb DA, Riner D, Cowan B, Salah Z, Jennings WC, Mattioli MC, Murphy JL. (2024). Chlorine inactivation of *Elizabethkingia* spp. in water. *Emerging Infectious Diseases*, *30* (10). [https://doi.org/10.3201/eid3010.240917](https://doi.org/10.3201/eid3010.240917)
 
 <br />
 
