@@ -1,8 +1,9 @@
 ### Functions: Modeling Microbial Inactivation Kinetics with Disinfectant Demand
-### Adapted from: Chlorine inactivation of *Elizabethkingia* species in water 
-### David A Holcomb
+### Adapted from: Chlorine inactivation of *Elizabethkingia* spp. in water
+###               https://doi.org/10.3201/eid3010.240917 
+### Author: David A Holcomb
 ### Created: 21 June 2024
-### Updated: 03 September 2024
+### Updated: 25 September 2024
 
 
 ##
